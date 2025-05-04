@@ -1,60 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÇAL Yazılım Kulübü</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logotransparent.png" type="image/x-icon">
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Çemberlitaş Yazılım Kulübü</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-    <nav class="navbar">
-        <nav class="navbar">
-            <img src="logotransparent.png" style="width: 100px;">
-            <h1>Yazılım Kulübü </h1>
-        </nav>        
-        <ul class="nav-links">
-            <li class="dropdown">
-                <a href="index.html">Ana Sayfa</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">merhaba</a></li>
-                    <li><a href="#">merhaba2</a></li>
-                    <li><a href="#">merhaba3</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">Hakkımızda</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">deneme1</a></li>
-                    <li><a href="#">deneme2</a></li>
-                    <li><a href="#">deneme3</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">Etkinliklerimiz</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Etkinlik 1</a></li>
-                    <li><a href="#">Etkinlik 2</a></li>
-                    <li><a href="#">Etkinlik 3</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">Eğitimlerimiz</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">proje1</a></li>
-                    <li><a href="#">proje2</a></li>
-                    <li><a href="#">proje3</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">Sosyal Medya</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">iletisim1</a></li>
-                    <li><a href="#">iletisim2</a></li>
-                    <li><a href="#">iletisim3</a></li>
-                </ul>
-            </li>
-        </ul>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.png" alt="Kulüp Logosu">
+        Çemberlitaş Yazılım Kulübü
+      <div class="nav-links">
+        <a href="#">Ana Sayfa</a>
+        <a href="etkinlikler.html">Etkinlikler</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+      </div>
     </nav>
+  </header>
+
+  <section class="hero">
+    <div class="slider">
+      <img src="images/img1.jpeg" class="slide active" alt="Etkinlik 1">
+      <img src="images/img2.jpeg" class="slide" alt="Etkinlik 2">
+      <img src="images/img3.jpeg" class="slide" alt="Etkinlik 3">
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+    <h1>Geleceği Birlikte Kodlayalım</h1>
+    <p>Yazılım kulübü ile öğren, geliştir, paylaş!</p>
+    <button>Bize Katıl</button>
+  </section>
+  
+  <script src="slider.js"></script>
+
+  <footer>
+    © 2025 Çemberlitaş Yazılım Kulübü. Tüm hakları saklıdır.
+  </footer>
+
 </body>
 </html>
