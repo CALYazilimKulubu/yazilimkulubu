@@ -38,6 +38,14 @@
   </section>
   
   <script src="slider.js"></script>
+<script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 
   <footer>
     © 2025 Çemberlitaş Yazılım Kulübü. Tüm hakları saklıdır.
