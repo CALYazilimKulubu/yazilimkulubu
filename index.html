@@ -9,19 +9,21 @@
 </head>
 <body>
   <header>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Kulüp Logosu" />
+      <span>Çemberlitaş Yazılım Kulübü</span>
+    </div>
     <div class="menu-toggle" id="mobile-menu">&#9776;</div>
-    <nav>
-      <div class="logo">
-        <img src="images/logo.png" alt="Kulüp Logosu">
-        Çemberlitaş Yazılım Kulübü
-      <div class="nav-links">
-        <a href="#">Ana Sayfa</a>
-        <a href="etkinlikler.html">Etkinlikler</a>
-        <a href="hakkimizda.html">Hakkımızda</a>
-        <a href="iletisim.html">İletişim</a>
-      </div>
-    </nav>
-  </header>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="etkinlikler.html">Etkinlikler</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="iletisim.html">İletişim</a>
+    </div>
+  </nav>
+</header>
+
 
   <section class="hero">
     <div class="slider">
@@ -43,6 +45,14 @@
 
   menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+  });
+</script>
+<script>
+  const toggle = document.getElementById('mobile-menu');
+  const nav = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
   });
 </script>
 
