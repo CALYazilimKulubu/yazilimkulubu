@@ -240,3 +240,47 @@ section {
   color: #FAFAFB;
   margin-top: 40px;
 }
+/* Menü ikonu - sadece mobilde görünür */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobil menü başlangıçta gizli */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #001e46;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 10px 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
