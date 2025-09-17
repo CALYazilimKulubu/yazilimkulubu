@@ -356,3 +356,15 @@ nav {
     display: flex;
   }
 }
+
+.image-row {
+  display: flex; 
+  justify-content: center;
+  gap: 20px; 
+  margin-top: 20px;
+}
+
+.image-row img {
+  max-width: 300px;
+  height: auto;
+}
